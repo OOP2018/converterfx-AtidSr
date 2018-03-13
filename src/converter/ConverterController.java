@@ -6,7 +6,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.event.ActionEvent;
 
-
+/**
+ *  UI controller for events and initializing components.
+ *  @author Atid Srisukhantapuek
+ */
 public class ConverterController {
     @FXML
     private TextField textField1;
@@ -36,6 +39,11 @@ public class ConverterController {
         }
     }
 
+
+
+    /**
+     *   Convert a distance from one unit to another
+     */
     public void handleConvert(ActionEvent event){
 
         String text = "";
@@ -70,8 +78,9 @@ public class ConverterController {
         }
 
     }
-
-
+    /**
+     * Clear number unit in textField
+     */
     public void handleClear(ActionEvent event){
         textField1.clear();
         textField2.clear();
